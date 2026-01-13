@@ -164,7 +164,7 @@ jobs:
         run: |
           yq -i '
             (.spec.template.spec.containers[] | select(.name=="istory")).image
-            = "dangtong76/istory:${{ github.sha }}"
+            = "j1m1n/istory:${{ github.sha }}"
           ' overlay/aws-dev/patch-deploy.yml
       ####이 두 개 추가##########33
 
